@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio Landing Page</title>
+  <!----CSS link----->
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/responsive.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav" id="idnav">
+      <ul class="nav-menu" id="ulId">
+        <li class="nav-logo"><img src="assets/img/logo.png" alt="logo" /></li>
+        <li class="nav-icon"><i class="fa-solid fa-bars"></i>
+        <li class="nav-links"><a href="#hero-section"><span>Home</span></a></li>
+        <li class="nav-links"><a href="#services-section">Our Services</a></li>
+        <li class="nav-links"><a href="#portfolio-section">Portfolio</a></li>
+        <li class="nav-links"><a href="#about-section">About us &#9207;</a>
+          <ul class="dropdown">
+            <li class="nav-links"><a href="#team-section">Out Team</a></li>
+          </ul>
+        </li>
+        <li class="nav-links"><a href="#blog-section">Blog</a></li>
+        <li class="nav-links"><a href="#contact-section">Contact us</a></li>
+      </ul>
+    </nav>
+    <section id="hero-section" class="hero-section">
+      <article class="hero-section-content">
+        <div class="hero-section-title">
+          <h1>Digital agency <span class="logo"><span class="logo-blue">Digital</span><span>MAX</span></span></h1>
+          <h3>The best solutions for business in a digital environment.<br> Providing all types of web services and help
+            to improve SEO <br> ranking of your website.</h3>
+        </div>
+        <div class="hero-section-button">
+          <a href="#portfolio-section" class="btn">View Portfolio</a>
+        </div>
+      </article>
+      <article class="hero-section-image">
+        <img src="assets/img/home.png" alt="home-img">
+      </article>
+    </section>
+  </header>
+  <main>
+    <!--Our Services-->
+    <section id="services-section" class="services-section">
+      <h2 class="title"><span>Our</span> Services</h2>
+      <article class="services-section-content">
+        <article class="services-card">
+          <article class="img-wapper">
+            <img src="assets/img/icon-branding.png" alt="icon-branding" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">Branding</h3>
+            <p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </article>
+        </article>
+        <article class="services-card">
+          <article class="img-wapper">
+            <img src="assets/img/icon-website.png" alt="icon-website" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">Website</h3>
+            <p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </article>
+        </article>
+        <article class="services-card">
+          <article class="img-wapper">
+            <img src="assets/img/seo_optimization.png" alt="seo_optimization" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">SEO Optimization</h3>
+            <p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </article>
+        </article>
+        <article class="services-card">
+          <article class="img-wapper">
+            <img src="assets/img/icon-graphic-design.png" alt="icon-graphic-design" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">Graphic Design
+            </h3>
+            <p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </article>
+        </article>
+        <article class="services-card">
+          <article class="img-wapper">
+            <img src="assets/img/icon-social-marketing.png" alt="icon-social-marketing" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">Social Marketing</h3>
+            <p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </article>
+        </article>
+
+      </article>
+    </section>
+
+    <!--Portfolio-->
+    <section id="portfolio-section" class="portfolio-section">
+      <h2 class="title"><span>Our</span> Portfolio</h2>
+      <article class="portfolio-section-content">
+        <article id="myBtnContainer" class="portfolio-menuo">
+          <a class="btn active " onclick="filterSelection('all')"> All</a>
+          <button class="btn-secondary" onclick="filterSelection('Website')"> Website</button>
+          <button class="btn-secondary" onclick="filterSelection('Web Banners')"> Web Banners</button>
+          <button class="btn-secondary" onclick="filterSelection('Branding')"> Branding</button>
+          <button class="btn-secondary" onclick="filterSelection('Printing')"> Printing</button>
+        </article>
+        <article class="row-portfolio">
+          <div class="column Branding ">
+            <div class="content">
+              <img src="assets/img/branding1.jpg " alt="Branding " style="cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+              <div class="caption">
+                <p class="category">Branding</p>
+                <p class="description">Branding</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Branding ">
+            <div class="content">
+              <img src="assets/img/branding2.jpg " alt="Branding " style="cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+              <div class="caption">
+                <p class="category">Branding</p>
+                <p class="description">Branding</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Branding ">
+            <div class="content">
+              <img src="assets/img/branding3.jpg " alt="Branding " style="cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+              <div class="caption">
+                <p class="category">Branding</p>
+                <p class="description">Branding</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Printing ">
+            <div class="content">
+              <img src="assets/img/printing1.jpg " alt="Printing " style="cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+              <div class="caption">
+                <p class="category">Printing</p>
+                <p class="description">Printing</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Printing ">
+            <div class="content">
+              <img src="assets/img/printing2.jpg " alt="Printing " style="cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+              <div class="caption">
+                <p class="category">Printing</p>
+                <p class="description">Printing</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Printing ">
+            <div class="content">
+              <img src="assets/img/printing3.jpg " alt="Printing " style="cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+              <div class="caption">
+                <p class="category">Printing</p>
+                <p class="description">Printing</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Web Banners">
+            <div class="content">
+              <img src="assets/img/banner1.jpg " alt="Banner " style="cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+              <div class="caption">
+                <p class="category">Web Banners</p>
+                <p class="description">Web Banners</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Web Banners">
+            <div class="content">
+              <img src="assets/img/banner2.jpg " alt="Banner " style="cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+              <div class="caption">
+                <p class="category">Web Banners</p>
+                <p class="description">Web Banners</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Web Banners">
+            <div class="content">
+              <img src="assets/img/banner3.jpg " alt="Banner " style="cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+              <div class="caption">
+                <p class="category">Web Banners</p>
+                <p class="description">Banners for confectionery Cakelove</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Website">
+            <div class="content">
+              <a href="https://www.google.com/" target="_blank"><img src="assets/img/website1.png "
+                  alt="HTML project "></a>
+              <div class="caption">
+                <p class="category">Website</p>
+                <p class="description">Website</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Website">
+            <div class="content">
+              <a href="https://www.google.com/" target="_blank"><img src="assets/img/website2.png "
+                  alt="HTML project "></a>
+              <div class="caption">
+                <p class="category">Website</p>
+                <p class="description">Natasha's portfolio</p>
+              </div>
+            </div>
+          </div>
+          <div class="column Website">
+            <div class="content">
+              <a href="https://www.google.com/" target="_blank"><img src="assets/img/website3.png "
+                  alt="HTML project "></a>
+              <div class="caption">
+                <p class="category">Website</p>
+                <p class="description">Natasha's portfolio</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="modal01" class="modal" onclick="this.style.display='none'">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <img scr="" id="img01" alt="img" style="max-width:100%">
+            </div>
+          </div>
+        </article>
+      </article>
+    </section>
+
+    <!--About-->
+    <section id="about-section" class="about-section">
+      <h2 class="title">About <span>us</span></h2>
+      <article class="about-section-content">
+        <article class="about-section-text">
+          <h3>Why Choose Us?</h3>
+          <p class="content-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old.
+          </p>
+        </article>
+        <article class="about-section-image">
+          <img src="assets/img/about.png" class="man-img" alt="about-img"/>
+        </article>
+
+      </article>
+    </section>
+
+    <!--Our Team-->
+    <section id="team-section" class="team-section">
+      <h2 class="title"><span>Our</span> Team</h2>
+      <article class="team-section-content">
+        <article class="team-card">
+          <article class="img-wapper">
+            <img src="assets/img/mery.jpg" alt="Mery" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">Mery</h3>
+            <p class="profession">Business Development</p>
+            <div class="social">
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </article>
+        </article>
+        <article class="team-card">
+          <article class="img-wapper">
+            <img src="assets/img/Chase.jpg" alt="Chase" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">Chase</h3>
+            <p class="profession">Art Director</p>
+            <div class="social">
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </article>
+        </article>
+        <article class="team-card">
+          <article class="img-wapper">
+            <img src="assets/img/Jessica.jpg" alt="Jessica" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">Jessica</h3>
+            <p class="profession">SEO Director</p>
+            <div class="social">
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </article>
+        </article>
+        <article class="team-card">
+          <article class="img-wapper">
+            <img src="assets/img/Aaron.jpg" alt="Aaron" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">Aaron</h3>
+            <p class="profession">PPC Director</p>
+            <div class="social">
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </article>
+        </article>
+      </article>
+    </section>
+
+    <!--Blog-->
+    <section id="blog-section" class="blog-section">
+      <h2 class="title"> <span>Our</span> Blog</h2>
+      <article class="blog-section-content">
+        <article class="card">
+          <article class="img-wapper">
+            <img src="assets/img/email_marketing.jpg" alt="email-marketing" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">How to make a successful email marketing?</h3>
+            <div class="content-text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s...
+              </p>
+            </div>
+            <div class="content-info">
+              <p class="calendar">
+                <i class="fa-solid fa-calendar"></i>
+                08 януари 2019
+              </p>
+
+              <p class="time">
+                <i class="fa-solid fa-clock"></i>
+                7 минути
+              </p>
+            </div>
+            <div class="read-more">
+              <a href="">Read more</a> <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </article>
+        </article>
+        <article class="card">
+          <article class="img-wapper">
+            <img src="assets/img/SEO_optimization_from_A_to_Z.png" alt="SEO optimization - from A to Z" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">SEO optimization - from A to Z.</h3>
+            <div class="content-text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s...
+              </p>
+            </div>
+            <div class="content-info">
+              <p class="calendar">
+                <i class="fa-solid fa-calendar"></i>
+                08 януари 2019
+              </p>
+
+              <p class="time">
+                <i class="fa-solid fa-clock"></i>
+                7 минути
+              </p>
+            </div>
+            <div class="read-more">
+              <a href="">Read more</a> <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </article>
+        </article>
+        <article class="card">
+          <article class="img-wapper">
+            <img src="assets/img/The_difference_between_UI_and_UX_design.jpg"
+              alt="The difference between UI and UX design" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">The difference between UI and UX design</h3>
+
+
+            <div class="content-text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s...
+              </p>
+            </div>
+            <div class="content-info">
+              <p class="calendar">
+                <i class="fa-solid fa-calendar"></i>
+                11 януари 2019
+              </p>
+
+              <p class="time">
+                <i class="fa-solid fa-clock"></i>
+                3 минути
+              </p>
+            </div>
+            <div class="read-more">
+              <a href="">Read more</a> <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </article>
+        </article>
+        <article class="card">
+          <article class="img-wapper">
+            <img src="assets/img/Principles_in_graphic_design.png" alt="Principles in graphic design" />
+          </article>
+          <article class="content">
+            <h3 class="content-title">Principles in design
+            </h3>
+
+
+            <div class="content-text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s , when an unknown printer took a ....
+              </p>
+            </div>
+            <div class="content-info">
+              <p class="calendar">
+                <i class="fa-solid fa-calendar"></i>
+                12 януари 2019
+              </p>
+
+              <p class="time">
+                <i class="fa-solid fa-clock"></i>
+                4 минути
+              </p>
+            </div>
+            <div class="read-more">
+              <a href="">Read more</a> <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </article>
+        </article>
+      </article>
+    </section>
+
+    <!--Contact-->
+    <section id="contact-section" class="contact-section">
+      <h2 class="title">Contact <span>us</span></h2>
+      <article class="contacts">
+        <div class="contacts-card">
+          <div class="icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="text">
+            <p class="text-title">Address</p>
+            <p>London</p>
+          </div>
+        </div>
+        <div class="contacts-card">
+          <div class="icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="text">
+            <p class="text-title">Phone</p>
+            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+          </div>
+        </div>
+        <div class="contacts-card">
+          <div class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="text">
+            <p class="text-title">Email</p>
+            <p><a href="mailto:digitalmax@gmail.com">digitalmax@gmail.com</a></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="contact-section-content">
+        <article class="contact-form-contect">
+          <h3 class="contact-form-contect-title">Ask your question</h3>
+          <form method="POST" id="form" class="contact-form">
+
+            <div class="input-firse-name">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            </div>
+            <div class="input-last-name">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            </div>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <div class="contact-button">
+              <button class="btn">Sent</button>
+            </div>
+
+          </form>
+        </article>
+        <article class="contact-section-image">
+          <img src="assets/img/contact.png" alt="contact-img">
+        </article>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p class="copyright">Copyright © 2022 DigitalMAX. All Rights Reserved.</p>
+    </footer>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
